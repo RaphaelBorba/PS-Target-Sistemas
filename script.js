@@ -35,4 +35,29 @@ function quest3(arr=[]){
   }
   console.log([menor,maior,media_mes,up_mid])
 }
-quest3([1,2,3,4,5,6,6,7,8,9,9,345,6,4,3,4,6,56,545,4,46,43,534,6,432])
+//quest3([1,2,3,4,5,6,6,7,8,9,9,345,6,4,3,4,6,56,545,4,46,43,534,6,432])
+
+function quest4(arr=[]){
+  let total=0
+  let por=[]
+  let porc=0
+  for(i in arr){
+    total+=arr[i]
+  }
+  for(j in arr){
+    porc=(arr[j]*100)/total
+    por.push(porc)
+  }
+  console.log(por)
+}
+//quest4([67836.43, 36678.66, 29229.88, 27165.48, 19849.53])
+
+function quest6(str=''){
+  let i= str.length -1
+  let reverse=''
+  for(;i>-1;i--){
+    reverse+=str[i]
+  }
+  console.log(reverse)
+}
+//quest6('casa')
